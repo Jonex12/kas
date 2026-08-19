@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kaspa em Foco</title>
+  <style>
+    :root{--night:#071f29;--sea:#0b3742;--mint:#49eacb;--ice:#f2faf8;--text:#153540;--soft:#607b82;--line:#d7e7e4}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--ice);color:var(--text)}
+    header{background:radial-gradient(circle at 84% 10%,#236c70 0,transparent 29%),var(--night);color:white;padding:22px max(24px,calc((100vw - 1080px)/2)) 74px}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:14px}.logo{display:flex;gap:10px;align-items:center;font-weight:800;font-size:20px}.logo b{display:grid;place-items:center;background:var(--mint);color:var(--night);border-radius:11px;width:36px;height:36px;font-size:20px}
+    .nav-note{color:#c2e5df;font-size:13px}.hero{max-width:690px;padding-top:70px}.hero span{font-size:12px;letter-spacing:1px;font-weight:800;color:var(--mint)}h1{font-size:clamp(37px,6vw,64px);letter-spacing:-2.5px;line-height:1;margin:12px 0 18px}.hero p{max-width:575px;margin:0;color:#c8dddd;font-size:18px;line-height:1.55}
+    main{width:min(1080px,calc(100% - 32px));margin:-35px auto 50px}.layout{display:grid;grid-template-columns:1.6fr .8fr;gap:22px}.card{background:white;border:1px solid rgba(255,255,255,.9);border-radius:22px;padding:25px;box-shadow:0 13px 28px #0a3c4020}
+    h2{margin:0 0 17px;color:var(--night);font-size:21px}.news{display:grid;gap:14px}.story{padding:17px;border:1px solid var(--line);border-radius:15px}.story small{font-weight:800;font-size:11px;letter-spacing:.8px;color:#178d79}.story h3{margin:7px 0;font-size:17px}.story p{margin:0;color:var(--soft);font-size:14px;line-height:1.5}.story a{display:inline-block;margin-top:10px;color:#087e6a;font-size:13px;font-weight:800;text-decoration:none}.story a:hover{text-decoration:underline}
+    .donation{background:var(--night);color:white}.donation h2{color:white}.donation p{color:#cae1df;line-height:1.5;font-size:14px}.address{margin:18px 0 12px;padding:14px;border-radius:12px;background:#123b45;color:var(--mint);font:600 13px ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere}.copy{width:100%;border:0;border-radius:12px;padding:13px;background:var(--mint);color:var(--night);font:800 14px Inter,system-ui;cursor:pointer}.copy:hover{filter:brightness(.96)}
+    .transparency{margin-top:22px;background:#e4fbf5;border-left:4px solid var(--mint);padding:15px;border-radius:0 12px 12px 0;color:#20554f;font-size:13px;line-height:1.5}.status{height:18px;margin:10px 0 0;font-size:13px;color:var(--mint)}footer{width:min(1080px,calc(100% - 32px));margin:0 auto 30px;color:var(--soft);font-size:12px;line-height:1.55}
+    @media(max-width:760px){header{padding-bottom:62px}.hero{padding-top:48px}.layout{grid-template-columns:1fr}.nav-note{display:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav><div class="logo"><b>K</b>Kaspa em Foco</div><div class="nav-note">Notícias · Comunidade · Transparência</div></nav>
+    <section class="hero"><span>COMUNIDADE KASPA</span><h1>Notícias que movem a rede.</h1><p>Um espaço independente para acompanhar novidades da comunidade Kaspa e apoiar a produção de conteúdo.</p></section>
+  </header>
+  <main>
+    <div class="layout">
+      <section class="card"><h2>Últimas notícias</h2><div class="news">
+        <article class="story"><small>REDE · 30 JUN 2026</small><h3>Toccata entrou na mainnet</h3><p>A atualização Toccata foi ativada na rede principal em 30 de junho. Ela amplia a programabilidade de camada 1 da Kaspa; a confirmação de ativação foi reportada pela Kaspa News.</p><a href="https://kaspa.news/articles" target="_blank" rel="noopener noreferrer">Ler cobertura da ativação →</a></article>
+        <article class="story"><small>INFRAESTRUTURA · JUN 2026</small><h3>Guia recomenda nó 2.0.1 ou superior</h3><p>O guia técnico de Toccata orienta operadores a atualizar nós para a versão 2.0.1 ou mais recente. O documento também destaca a nova regra mínima de taxa para envio por RPC.</p><a href="https://github.com/kaspanet/rusty-kaspa/blob/master/docs/toccata-guide.md" target="_blank" rel="noopener noreferrer">Abrir guia técnico →</a></article>
+        <article class="story"><small>FERRAMENTAS · 17 JUN 2026</small><h3>SDK Python 2.0.0 adiciona API de carteira</h3><p>O lançamento 2.0.0 do SDK Python passou a expor a API gerenciada de carteira, incluindo ciclo de vida, contas, envio, histórico e eventos.</p><a href="https://github.com/kaspanet/kaspa-python-sdk/releases" target="_blank" rel="noopener noreferrer">Ver lançamento do SDK →</a></article>
+        <article class="story"><small>DESENVOLVIMENTO · JUL 2026</small><h3>Trabalho continua no SDK WebAssembly e wRPC</h3><p>O repositório Rusty Kaspa mostra propostas recentes para empacotamento npm do SDK WebAssembly, suporte TLS em wRPC e limpeza pós-Toccata. São itens em desenvolvimento, não anúncios de produto final.</p><a href="https://github.com/kaspanet/rusty-kaspa/pulls" target="_blank" rel="noopener noreferrer">Acompanhar pull requests →</a></article>
+      </div></section>
+      <aside class="card donation"><h2>Apoie o projeto</h2><p>Doações são voluntárias e ajudam a manter este espaço de notícias. Envie somente KAS e confira o endereço antes de confirmar.</p>
+        <div class="address" id="wallet">kaspa:qz9c7qr92t4p5fu0a2kzg8kfflagxzwtlxca0hlmnt6erukakujuzlwqrdsrg</div>
+        <button class="copy" id="copyButton">Copiar endereço Kaspa</button><p class="status" id="status" role="status" aria-live="polite"></p>
+        <div class="transparency"><strong>Segurança:</strong><br>Este é um endereço público para recebimento. Nunca publique frase-semente, chave privada ou senha neste site.</div>
+      </aside>
+    </div>
+  </main>
+  <footer>Atualizado em 18 de agosto de 2026. Kaspa em Foco é uma página independente de exemplo. “Kaspa” e marcas relacionadas pertencem aos seus respectivos titulares. Conteúdo informativo, não é recomendação financeira.</footer>
+  <script>
+    document.querySelector('#copyButton').addEventListener('click', async () => {
+      const address = document.querySelector('#wallet').textContent.trim();
+      const status = document.querySelector('#status');
+      if (address.includes('SEU_ENDERECO')) { status.textContent = 'Adicione seu endereço público antes de publicar.'; return; }
+      try { await navigator.clipboard.writeText(address); status.textContent = 'Endereço copiado.'; }
+      catch { status.textContent = 'Selecione e copie o endereço manualmente.'; }
+    });
+  </script>
+</body>
+</html>
+
+
+
